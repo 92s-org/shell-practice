@@ -8,3 +8,6 @@ echo ${PORTS[mysql]}     # 3306
 for SERVICE in "${!PORTS[@]}"; do
     echo "$SERVICE runs on ${PORTS[$SERVICE]}"
 done
+
+readonly REGION="me-central-1"
+REGION="us-east-1"       # error: REGION: readonly variable
