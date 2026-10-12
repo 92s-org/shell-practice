@@ -7,3 +7,7 @@ echo $((A + B))     # 13
 echo $((A * B))     # 30
 echo $((A / B))     # 3  (integer division, decimals dropped)
 echo $((A % B))     # 1  (remainder)
+
+declare -i COUNT=5
+COUNT=COUNT+1
+echo $COUNT         # 6
