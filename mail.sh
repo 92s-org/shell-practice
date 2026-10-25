@@ -20,4 +20,4 @@ echo ""
 echo "$final_body"
 } | msmtp "$to_address"
 
-curl -X POST -H 'Content-type: application/json' --data '{"text":"$final_body"}'  $slack_url
+curl -X POST -H 'Content-type: application/json' --data '{"text": \"$final_body\"}'  $slack_url
