@@ -15,3 +15,5 @@ do
 done <<< "$DISK_USAGE"
 
 echo -e "$MESSAGE"
+
+sh mail.sh "m.sivakmrreddy@gmail.com" "Disk Usage is high" "$MESSAGE" "DevOps Team" "$SERVER_IP" "DISK Usage"
